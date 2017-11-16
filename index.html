@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Inmobiliaria Aqui</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="dist/style.css">
+</head>
+<body>
+	<!-- header -->
+	<header>
+		<div class="topnav" id="myTopnav">
+			<a href=""><img src="dist/images/logoTipo-resized.png" class="logo" alt="logo"></a>
+			<a href="">Home</a>
+			<a href="">Venta</a>
+			<a href="">Renta</a>
+			<a href="">Contactenos</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+		</div>
+	</header>
+	<!-- /header -->
+
+	<!-- search -->
+	<section>
+		<div class="background">
+			<div class="row">
+				<div class="small-10 small-centered columns">
+					<div class="search">
+						<div class="row">
+						<!-- operacion, tipo, departamento, zona -->
+							<form action="">
+								<div class="small-12 medium-6 columns">
+									<select name="operacion" id="operacion" placeholder="operacion">
+					                <option selected disabled>Operacion</option>
+					                <option value="Venta">Venta</option>
+					                <option value="Renta">Renta</option>
+					            </select>
+								</div>
+								<div class="small-12 medium-6 columns">
+					              <select name="tipoinmueble" id="tipoinmueble">
+					                <option selected disabled>Tipo de inmueble</option>
+					                <option value="Casa">Casa</option>
+					                <option value="Apartamento">Apartamento</option>
+					                <option value="Bodega">Bodega</option>
+					                <option value="Terreno">Terreno</option>
+					                <option value="Oficina">Oficina</option>
+					                <option value="Local">Local</option>
+					              </select>
+								</div>
+							</div>
+							<div class="row">
+									<div class="small-12 medium-6 columns">
+										<select name="departamento" id="departamento" placeholder="departamento">
+						                <option selected disabled>departamento</option>
+						                <option value="Venta">Guatemala</option>
+						                <option value="Renta">Santa Rosa</option>
+						            </select>
+									</div>
+									<div class="small-12 medium-6 columns">
+										<select name="Zona" id="Zona" placeholder="Zona">
+						                <option selected disabled>Zona</option>
+						                <option value="Venta">1</option>
+						                <option value="Renta">2</option>
+						            </select>
+									</div>
+							</div>
+							<div class="row">
+								<div class="small-12 medium-6 small-centered text-center">
+									<input type="button" class="button" value="Buscar" id="enviar">
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- / search -->
+
+	<!-- inmuebles -->
+	<section>
+		<div class="propertys">
+			<div class="row">
+				<!-- <div class="small-12 columns"> -->
+					<div class="row">
+						<div class="small-12 medium-4 columns">
+							<div class="property">
+								<a href="">
+								<h5>Apartamento en zona 16</h5>
+								<img src="dist/images/casa.jpg" alt="">
+								<span>RENTA</span>
+								<div class="info">
+									<i class="flaticon-carro-compacto"><strong> 2</strong></i>
+									<i class="flaticon-banera-con-ducha-abierta"><strong> 2</strong></i>
+									<i class="flaticon-carro-compacto"><strong> 2</strong></i>
+									<p><strong>Q</strong> 12000</p>
+								</div>
+								</a>
+							</div>
+						</div>
+
+						<div class="small-12 medium-4 columns">
+							<div class="property">
+								<a href="">
+								<h5>Apartamento en zona 16</h5>
+								<img src="dist/images/casa2.jpg" alt="">
+								<span>RENTA</span>
+								<div class="info">
+									<i class="flaticon-carro-compacto"><strong> 2</strong></i>
+									<i class="flaticon-banera-con-ducha-abierta"><strong> 2</strong></i>
+									<i class="flaticon-carro-compacto"><strong> 2</strong></i>
+									<p><strong>Q</strong> 12000</p>
+								</div>
+								</a>
+							</div>
+						</div>
+
+						<div class="small-12 medium-4 columns">
+							<div class="property">
+								<a href="">	
+								<h5>Apartamento en zona 16</h5>
+								<img src="dist/images/casa3.jpg" alt="">
+								<span>RENTA</span>
+								<div class="info">
+									<i class="flaticon-carro-compacto"><strong> 2</strong></i>
+									<i class="flaticon-banera-con-ducha-abierta"><strong> 2</strong></i>
+									<i class="flaticon-carro-compacto"><strong> 2</strong></i>
+									<p><strong>Q</strong> 12000</p>
+								</div>
+								</a>
+							</div>
+						</div>
+
+						<div class="small-12 medium-4 columns">
+							<div class="property">
+								<a href="">
+								<h5>Apartamento en zona 16</h5>
+								<img src="dist/images/casa3.jpg" alt="">
+								<span>VENTA</span>
+								<div class="info">
+									<i class="flaticon-carro-compacto"><strong> 2</strong></i>
+									<i class="flaticon-banera-con-ducha-abierta"><strong> 2</strong></i>
+									<i class="flaticon-carro-compacto"><strong> 2</strong></i>
+									<p><strong>Q</strong> 12000</p>
+								</div>
+								</a>
+							</div>
+						</div>
+
+						<div class="small-12 medium-4 columns">
+							<div class="property">
+								<a href="">
+								<h5>Apartamento en zona 16</h5>
+								<img src="dist/images/casa3.jpg" alt="">
+								<span>VENTA</span>
+								<div class="info">
+									<i class="flaticon-carro-compacto"><strong> 2</strong></i>
+									<i class="flaticon-banera-con-ducha-abierta"><strong> 2</strong></i>
+									<i class="flaticon-carro-compacto"><strong> 2</strong></i>
+									<p><strong>Q</strong> 12000</p>
+								</div>
+								</a>
+							</div>
+						</div>
+
+						<div class="small-12 medium-4 columns">
+							<div class="property">
+								<a href="">
+								<h5>Apartamento en zona 16</h5>
+								<img src="dist/images/casa3.jpg" alt="">
+								<span>VENTA</span>
+								<div class="info">
+									<i class="flaticon-carro-compacto"><strong> 2</strong></i>
+									<i class="flaticon-banera-con-ducha-abierta"><strong> 2</strong></i>
+									<i class="flaticon-carro-compacto"><strong> 2</strong></i>
+									<p><strong>Q</strong> 12000</p>
+								</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				<!-- </div> -->
+			</div>
+		</div>
+	</section>	
+	<!-- /inmuebles -->
+	<!-- contactenos -->
+	<section>
+		<div class="contactUs">
+			<div class="row">
+				<div class="small-12 small-centered text-center medium-7 columns">
+					<h2>Contactenos</h2>
+					<div class="contactForm">
+						<div class="row">
+							<form action="">
+								<div class="small-12 columns">
+									<input type="text" placeholder="Nombre"  name="name">
+								</div>
+								<div class="small-12 columns">
+									<input type="number" placeholder="Telefono"  name="phone">
+								</div>
+								<div class="small-12 columns">
+									<input type="email" placeholder="Correo electronico"  name="email">
+								</div>
+								<div class="small-12 columns">
+									<textarea type="text" placeholder="Comentario"  name="coment" cols="30" rows="10"></textarea>
+								</div>
+								<div class="small-12 columns">
+									<input type="button" class="button" value="Enviar" id="enviar">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /contactenos -->
+	<footer>
+		<div class="row">
+			<!-- nosotros -->
+			<div class="small-12 medium-4 large-4 columns">
+			<h5>NOSOTROS</h5>
+				<p>Las mejores ubicaciones de inmuebles en Guatemala, nosotros las tenemos, busca con nosotros casas, apartamentos, oficina y más. Somos los mejores para tu inmueble.</p>
+			</div>
+			<!-- contactos -->
+			<div class="small-12 medium-4 large-4 columns">
+				<h5>CONTACTOS</h5>
+				<p><strong>TELEFONOS: </strong>55690340</p>
+				<p><strong>CORREO: </strong>inmobiliariaqui@gmail.com</p>
+			</div>
+			<!-- facebook -->
+			<div class="small-12 medium-4 large-4 text-center columns">
+			<h5>FACEBOOK</h5>
+				<a href="https://www.facebook.com/Inversionesinmobiliariasaqui/"><i class="fi-social-facebook"></i></a>
+			</div>
+		</div>
+	</footer>
+
+
+  <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="node_modules/foundation-sites/dist/js/foundation.min.js"></script>
+  <!-- <script src="dist/app.js"></script> -->
+  <script src="src/app.js"></script>
+</body>
+</html>

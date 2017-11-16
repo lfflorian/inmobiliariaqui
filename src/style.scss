@@ -1,0 +1,389 @@
+@import '../node_modules/foundation-sites/dist/css/foundation-float.min.css';
+/*@import '../node_modules/foundation-sites/dist/css/foundation.min.css';*/
+@import 'icons/flaticon.css'; 
+@import '../node_modules/foundation-icons/foundation-icons.css'; 
+/*@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Expanded|Raleway');*/
+
+$background-color: #E6E6E6;
+$red-color: #FA5858; 
+$blue-color: #58ACFA;
+$topbar-background: rgb(51, 51, 51);
+$topbar-text: #f2f2f2;
+$color-red-logo: rgb(229,52,44);
+
+
+body {
+	font-family: 'Raleway', sans-serif;
+	background-color: $background-color;
+}
+
+.title {
+	background-color:$red-color ;
+	margin-bottom: 10px;
+	h2 {
+		color: #fafafa;
+		font-family: 'Encode Sans Expanded', sans-serif;
+	}
+}
+
+.content {
+	i {
+		color:$red-color ;
+		padding: 3px 8px;
+		border: 1px solid $red-color;
+		border-radius: 20%;
+		cursor: pointer;
+	}
+
+	.fi-clipboard-pencil {
+		color: $blue-color;
+		border-color: $blue-color;
+	}
+
+	i:hover {
+		background-color: $red-color ;
+		color: white;
+		-webkit-transition: background-color .5s; /* Safari */
+    	transition: background-color .5s;
+	}
+
+	.fi-clipboard-pencil:hover {
+		background-color: $blue-color ;
+	}
+}
+
+.form {
+
+	h5 {
+		color: $red-color ;
+	}
+
+	.dropzone {
+		width: 300px;
+		height: 300px;
+		border: 2px dashed #ccc;
+		color: #ccc;
+		line-height: 300px;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.dropzone.dragover {
+		border-color: #000;
+		color: #000;
+	}
+}
+
+/* Estilos pagina original */
+
+/*navbar*/
+/* Add a black background color to the top navigation */
+
+header {
+	.topnav {
+    	background-color: $topbar-text;
+    	overflow: hidden;
+	}
+
+	/* Style the links inside the navigation bar */
+	.topnav {
+
+		a {
+			float: left;
+		    display: block;
+		    color: $topbar-background;
+		    text-align: center;
+		    padding: 14px 16px;
+		    text-decoration: none;
+		    font-size: 17px;
+		    line-height: 4;
+		}
+
+		a:hover {
+			background-color: #ddd;
+		    color: black;
+		}
+
+		.icon {
+			display: none;
+		}
+	}
+}
+
+
+/*/navbar*/
+
+/* contenido principal y search */
+.button {
+	background-color: rgba(255,38,40,1);
+	color: #fafafa;
+	border-radius: 5px;
+}
+
+.background	{
+	background-image: url('images/interios.jpeg');
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 85vh;
+
+	.search {
+		margin-top: 20%;
+	    background-color: rgba(255,255, 255,.8);
+	    padding: 10px;
+	    border-radius: 5px;
+
+	    .button:hover {
+	    	background-color: rgba(255,38,40,0.1);
+	    	color: rgba(255,38,40,1);
+	    	border: 1px solid rgba(255,38,40,1);
+	    }
+	}
+
+}
+
+/* /contenido principal y search */
+
+/*propiedades*/
+.propertys {
+	margin: 50px;
+	.property {
+		background-color: #fff;
+		position: relative;
+		margin-bottom: 20px;
+
+		h5 {
+			padding: 10px;
+			color: black;
+		}
+
+		img {
+			width: 100%;
+    		height: 275px;
+		}
+
+		span {
+			position: absolute;
+		    top: 17%;
+		    left: 80%;
+		    background: green;
+		    color: white;
+		    padding: 4px;
+		    border-radius: 5px;
+		    font-weight: 700;
+		}
+
+		i {
+			color: $color-red-logo;
+
+			strong {
+				color: black;
+			}
+		} 
+		
+		.info {
+			padding: 4px;
+		}
+
+		p {
+			padding-left: 15px;
+			color: black;
+			margin: 0;
+		}
+	}
+}
+
+/* / propiedades*/
+/*contactenos*/
+
+.contactUs {
+	background-color: #fff;
+
+	h2 {
+		margin: 10px;
+	}
+
+	.contactForm {
+		margin: 40px;
+	}
+}
+/*/contacenos*/
+/* Footer */
+footer {
+	margin: 10px;
+	h5 {
+		text-align: center;
+	}
+
+	i {
+		font-size: 50px;
+		color: black;
+		transition: 1s;
+	}
+
+	p {
+		text-align: justify;
+	}
+
+	i:hover {
+		color: $color-red-logo;
+		transition: 1s;
+	}
+}
+/*/Footer*/
+
+/*slider*/
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/*media queries*/
+
+
+@media screen and (max-width: 1050px) { 
+	.propertys {
+		.property {
+			img {
+				height: 190px;
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 880px) { 
+	.propertys {
+		.property {
+			img {
+				height: 160px
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 635px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 635px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .propertys {
+	
+	.property {
+		img {
+			height: 100%;
+		}
+
+	  	.info {
+	  		text-align: center;
+	  	}
+  	}
+  }
+}
+
+

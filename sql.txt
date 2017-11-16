@@ -1,0 +1,18 @@
+CREATE TABLE inmueble (
+	idinmueble INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    operacion VARCHAR(10) NOT NULL,
+    tipoinmueble VARCHAR(20) NOT NULL,
+    titulo VARCHAR(35),
+    descripcion VARCHAR(400),
+    departamento VARCHAR(35),
+    municipio VARCHAR(35),
+    zona VARCHAR(3),
+    colonia VARCHAR(35),
+    nohabitaciones int(3),
+    nobanios int(3),
+    parqueos int(3),
+    dimenciones int(3)
+)
+
+INSERT INTO inmueble (operacion, tipoinmueble, titulo, descripcion, departamento, municipio, zona, colonia, nohabitaciones, nobanios, parqueos, dimenciones)
+VALUES ('venta','casa','mi primera casa','este es un ejemplo de casa', 'Guatemala', 'Guatemala', '16','montesano', 3,3,3,100)
